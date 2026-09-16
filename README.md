@@ -4,7 +4,7 @@
 ## Mes objectifs
 - Comprendre et développer la technologie fullstack d'une application
 - Déployer une application sur n'importe quelle plateforme
-- Développer des logiciels scientfiques
+- Développer des logiciels scientifiques
 ## Technologies que je souhaite maîtriser
 - Pour le backend : Java
 - Pour le frontend : HTML, CSS, Javascript

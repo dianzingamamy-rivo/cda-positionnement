@@ -1,4 +1,3 @@
-/*
 // Test
 console.log(" ");
 console.log("Bonjour Rivo");
@@ -48,7 +47,6 @@ isPalindrome(test1);
 console.log(isPalindrome("kayak")); // true
 console.log(isPalindrome("hello")); // false
 
-
 // Fonction Anagrammes
 function areAnagrams(str1, str2) {
   const cleanedStr1 = str1.toLowerCase().replace(/[\W_]/g, ""); // enlève d'abord les espaces
@@ -72,7 +70,6 @@ function areAnagrams(str1, str2) {
 console.log(areAnagrams("listen", "silent")); // true
 console.log(areAnagrams("Hello", "World")); // false
 console.log(areAnagrams("Astronomer", "Moon starer")); // true
-
 
 // Fonction Fibonacci
 // Version récursive
@@ -101,4 +98,100 @@ function fibonacciIterative(n) {
 n = 10;
 console.log(finobacci(n));
 console.log(fibonacciIterative(n));
-*/
+
+// Fonction Tri & Recherche
+// Fonction Tri
+function sortArray(arr) {
+  len = arr.length;
+  for (i = 0; i < len; i++) {
+    for (j = 0; j < len - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        // compare chaque élément avec un autre
+        temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(sortArray([3, 1, 4, 1, 5, 9, 2]));
+
+// Fonction Max
+function findMax(arr) {
+  len = arr.length;
+  for (i = 0; i < len; i++) {
+    for (j = 0; j < len - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr[len - 1]; // prend le dernier élément de la liste
+}
+
+console.log(findMax([3, 1, 4, 1, 5, 9, 2]));
+
+//
+// Manipulation des données
+const products = [
+  { id: 1, name: "Laptop", price: 999, category: "Electronics" },
+  { id: 2, name: "Phone", price: 699, category: "Electronics" },
+  { id: 3, name: "Desk", price: 299, category: "Furniture" },
+  { id: 4, name: "Chair", price: 199, category: "Furniture" },
+  { id: 5, name: "Monitor", price: 299, category: "Electronics" },
+];
+
+// la fonction qui retourne la catégorie d'un produit
+function filterByCategory(products, category) {
+  len = products.length; // détermine d'abord la taille
+  div = []; // crée un array vide
+  for (i = 0; i < len; i++) {
+    temp = products[i].category; // parcours toutes les catégories
+    if (temp === category) {
+      div.push(products[i]); // les élts sont poussés dans div
+    }
+  }
+  return console.log(div);
+}
+
+filterByCategory(products, "Electronics");
+
+// la fonction qui calcule le prix moyen
+function getAveragePrice(products) {
+  len = products.length;
+  average = 0;
+  for (i = 0; i < len; i++) {
+    average = average + products[i].price;
+  }
+  return console.log(average / len);
+}
+
+getAveragePrice(products);
+
+// la fonction qui retourne le produit le plus cher
+function getMostExpensive(products) {
+  len = products.length;
+  div = [];
+  for (i = 0; i < len; i++) {
+    div.push(products[i].price);
+  }
+  expPrice = findMax(div); // on sert de la fonction findMax
+  for (i = 0; i < len; i++) {
+    if (products[i].price === expPrice) {
+      return console.log(products[i]);
+    }
+  }
+}
+
+// getMostExpensive(products);
+
+// la fonction qui groupe les produits par catégorie
+function groupByCategory(products) {
+  const result = Object.groupBy(products, ({ category }) => category);
+  return console.log(result);
+}
+groupByCategory(products);

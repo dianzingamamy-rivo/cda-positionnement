@@ -1,0 +1,20 @@
+{
+  "name": "cda-positionnement",
+  "version": "1.0.0",
+  "description": "**Nom**: DIANZINGA Mamy-Rivo\r **Promotion**: Lyon - Septembre 2026",
+  "homepage": "https://github.com/dianzingamamy-rivo/cda-positionnement#readme",
+  "bugs": {
+    "url": "https://github.com/dianzingamamy-rivo/cda-positionnement/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianzingamamy-rivo/cda-positionnement.git"
+  },
+  "license": "MIT",
+  "author": "dianzingamamy-rivo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

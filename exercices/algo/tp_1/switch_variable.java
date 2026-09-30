@@ -25,9 +25,23 @@ public class switch_variable{
     variable temporaire (astuce : addition/soustraction).
   */
 
-   a = 5 ;
-   b = 3 ;
+   a = 0 ;
+   b = 42 ;
    
+   int somme;
+   int soustraction;
+
+   somme = 0 ;
+   soustraction = 0 ;
+
+   somme = (a + b) + (a - b) ;
+   soustraction = (a + b) - (a - b) ;
+
+   b = somme / 2 ;
+   a = soustraction / 2 ; 
+
+   System.out.println(a);
+   System.out.println(b);
 
   }
 }

@@ -13,13 +13,20 @@
    "vert foret" ci-dessous, a decommenter pour tester.
    ========================================================================== */
 
-/*
 :root {
-  --color-primary: #166534;
-  --color-primary-hover: #14532d;
-  --color-primary-soft: #f0fdf4;
-  --color-focus: #15803d;
+  --color-primary: #0966d6;
+  --color-primary-hover: #fdba74;
+  --color-primary-soft: #f8f8f8;
+  /*  --color-focus: #15803d;
   --font-sans: "Inter", system-ui, sans-serif;
   --radius: 4px;
-}
 */
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("../Inter") format("woff2");
+  font-weight: 100 900; /* Defines the range of supported weights */
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text while loading */
+}

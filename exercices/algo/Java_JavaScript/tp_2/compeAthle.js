@@ -99,7 +99,12 @@ epreuve100m.resultats.set("Kayin Ajayi", 9.98);
 epreuve100m.resultats.set("Favour Ashe", 9.63);
 
 console.log("=== Résultats Epreuve 100m ===");
-console.log(epreuve100m.classement());
+// console.log(epreuve100m.classement());
+count = 0;
+for (const key of epreuve100m.classement()) {
+  count = count + 1;
+  console.log(count + "   " + key[0] + "   " + key[1]);
+}
 
 // Epreuve du saut en longueur
 const epreuveSautEnLongueur = new Epreuve(
@@ -118,8 +123,8 @@ epreuveSautEnLongueur.resultats.set("Busang Collen", 7.87);
 epreuveSautEnLongueur.resultats.set("Kayin Ajayi", 9.98);
 epreuveSautEnLongueur.resultats.set("Favour Ashe", 8.96);
 
-console.log("=== Résultats Epreuve Saut en longueur ===");
-console.log(epreuveSautEnLongueur.classement());
+// console.log("=== Résultats Epreuve Saut en longueur ===");
+// console.log(epreuveSautEnLongueur.classement());
 
 // Epreuve du lancer de poids
 const epreuveLancerDuPoids = new Epreuve(
@@ -138,13 +143,8 @@ epreuveLancerDuPoids.resultats.set("Busang Collen", 23.56);
 epreuveLancerDuPoids.resultats.set("Kayin Ajayi", 21.54);
 epreuveLancerDuPoids.resultats.set("Favour Ashe", 23.04);
 
-console.log("=== Résultats Epreuve Lancer du poids ===");
-console.log(epreuveLancerDuPoids.classement());
+// console.log("=== Résultats Epreuve Lancer du poids ===");
+// console.log(epreuveLancerDuPoids.classement());
 
 // 3. Enregistrer des resultats pour chaque athlete dans chaque epreuve
 // Epreuve du 100 m
-console.log("demo for of ");
-
-for (const value of epreuveLancerDuPoids.resultats) {
-  console.log(value);
-}

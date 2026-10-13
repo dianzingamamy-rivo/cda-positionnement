@@ -14,13 +14,11 @@
    ========================================================================== */
 
 :root {
+  --color-background: #f8f8f8;
   --color-primary: #0966d6;
-  --color-primary-hover: #fdba74;
-  --color-primary-soft: #f8f8f8;
-  /*  --color-focus: #15803d;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --radius: 4px;
-*/
+  --color-accent: #fdba74;
+  --color-text: #000000;
+  --color-on-primary: #ffffff;
 }
 
 @font-face {

@@ -1,0 +1,13 @@
+#bouge {
+  padding: 20px;
+  margin: 50px auto;
+  width: 250px;
+  display: block;
+}
+
+#boite {
+  display: block;
+  margin: 20px auto;
+  background-color: cyan;
+  width: 420px;
+}

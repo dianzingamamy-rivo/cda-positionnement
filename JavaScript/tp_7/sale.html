@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand New Sales</title>
+    <link rel="stylesheet" href="sale.css" />
+    <script type="text/javascript" src="jquery-4.0.0.min.js"></script>
+    <script src="sale.js" defer></script>
+  </head>
+
+  <body>
+    <main class="app">
+      <div class="promo">
+        <div class="image">
+          <img src="photo_sale.webp" id="photo" alt="photo" />
+        </div>
+
+        <div class="infos">
+          <h2>Beats by DR DRE</h2>
+
+          <h3 id="prix">89.90 €</h3>
+
+          <button id="details">Voir les détails</button>
+
+          <div class="details">
+            <p>Autonomie : 30 heures</p>
+            <p>Bluetooth 5.3</p>
+            <p>Réduction de bruit active</p>
+          </div>
+
+          <div class="achat">
+            <label for="quantite">Quantité</label>
+            <input type="number" id="quantite" value="1" min="1" />
+
+            <button id="panier">Ajouter au panier</button>
+            <p id="message"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

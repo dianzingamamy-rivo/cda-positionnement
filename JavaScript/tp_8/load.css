@@ -1,0 +1,51 @@
+html {
+  background: #eee;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background: blue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.carte {
+  width: auto;
+  height: 220px;
+  padding: 15px;
+
+  background: white;
+  border-radius: 8px;
+
+  text-align: left;
+}
+
+.carte h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.carte p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.catalogue {
+  /* utiliser pour afficher les articles en 2 lignes et 2 colonnes */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

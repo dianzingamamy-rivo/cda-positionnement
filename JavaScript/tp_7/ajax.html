@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand New Sales</title>
+    <link rel="stylesheet" href="sale.css" />
+    <script type="text/javascript" src="jquery-4.0.0.min.js"></script>
+    <script src="ajax.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Test Ajax</h1>
+      <button id="charger">Charger les données</button>
+
+      <div id="resultat"></div>
+
+      <script>
+        $("#charger").on("click", function () {
+          $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts/1",
+            method: "GET",
+            dataType: "json",
+          })
+            .done(function (donnees) {
+              console.log(donnees);
+              $("#resultat").html(`<h2>${donnees.title}</h2>
+            <p>${donnees.body}</p>`);
+            })
+            .fail(function (xhr) {
+              console.error("Erreur HTTP:", xhr.status);
+              $("#resultat").text("Impossible de charger les données.");
+            });
+        });
+      </script>
+    </main>
+  </body>
+</html>

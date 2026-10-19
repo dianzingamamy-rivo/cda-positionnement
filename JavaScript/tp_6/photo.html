@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataset photo</title>
+    <link rel="stylesheet" href="photo.css" />
+    <script type="text/javascript" src="JS/jquery-4.0.0.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>-->
+    <script src="photo.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="toutesPhotos">
+        <h1>Paysages d'Afrique</h1>
+        <div class="photoPremiere">
+          <img
+            src="photo_1.jpg"
+            id="photoPremiere"
+            data-photo="photo_1.jpg"
+            alt="Photo Afrique"
+          />
+          <p>Le Mont Kilimandjaro en Tanzanie</p>
+        </div>
+
+        <div class="photoDeuxieme">
+          <img
+            src="photo_2.jpg"
+            id="photoDeuxieme"
+            data-photo="photo_2.jpg"
+            alt="Photo Afrique"
+          />
+          <p>
+            Les chutes de Victoria à la frontière entre le Zimbabwe et Zambie
+          </p>
+        </div>
+
+        <div class="photoTroisieme">
+          <img
+            src="photo_3.jpg"
+            id="photoTroisieme"
+            data-photo="photo_3.jpg"
+            alt="Photo Afrique"
+          />
+          <p>Le Delta de l'Okavango au Botswana</p>
+        </div>
+      </div>
+
+      <div id="fond"></div>
+
+      <img id="grandePhoto" src="" alt="Photo agrandie" />
+    </main>
+  </body>
+</html>

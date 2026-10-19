@@ -1,0 +1,30 @@
+/* ==========================================================================
+   theme.css - Votre identite visuelle
+   --------------------------------------------------------------------------
+   Ce fichier est charge APRES tokens.css : toute variable redefinie ici
+   remplace celle du design system commun.
+
+   Regles :
+   - ne surchargez que des tokens SEMANTIQUES (--color-primary, --font-sans...)
+   - verifiez chaque couple texte / fond avec un outil de contraste
+     (WebAIM Contrast Checker) : 4.5:1 minimum pour le texte.
+
+   La version de reference garde le theme par defaut. Exemple de theme
+   "vert foret" ci-dessous, a decommenter pour tester.
+   ========================================================================== */
+
+:root {
+  --color-background: #f8f8f8;
+  --color-primary: #0966d6;
+  --color-accent: #fdba74;
+  --color-text: #000000;
+  --color-on-primary: #ffffff;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("../Inter") format("woff2");
+  font-weight: 100 900; /* Defines the range of supported weights */
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text while loading */
+}

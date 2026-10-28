@@ -23,5 +23,9 @@
 
 <main class="container">
   <!-- La page correspondant a l'adresse s'affiche ici. -->
+  <ul class="grid-auto list" role="list">
+    <li><app-stat-card label="Congés payés restants" [value]="10" unit="jours" [max]="25" /></li>
+    <li><app-stat-card label="RTT restants" [value]="6" unit="jours" /></li>
+  </ul>
   <router-outlet />
 </main>
